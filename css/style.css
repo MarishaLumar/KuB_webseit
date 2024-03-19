@@ -1,0 +1,252 @@
+@import url(../component/color.css);
+@import url(../template/section-card.css);
+@import url(../template/logo-partners.css);
+@import url(../template/gradient_header.css);
+@import url(../template/publication_block.css);
+
+/*---------------------FIRST-SCREEN-----------------------------------------------------------*/
+
+.first-screen {
+  min-height: 150vh;
+  background: url(../image/fon2.png) no-repeat center/contain;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img.logo {
+  max-width: 70%;
+}
+
+.link_circle:hover svg path {
+  stroke: var(--third-color);
+}
+
+.title-center {
+  margin-top: 60px;
+  font-size: 38px;
+  line-height: 1.21;
+}
+/*---------------------SECTION-TABS-----------------------------------------------------------*/
+
+.nav-link.active {
+  background: linear-gradient(90.13deg, #ffc660fc 0.84%, #ff6700 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section1 {
+  background-color: #eee4fa;
+  padding-bottom: 1rem;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-items-start {
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 87px;
+}
+
+.nav-pills {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: none;
+  color: var(--second-color);
+  border-width: 0;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.nav-link:hover {
+  color: var(--third-color);
+}
+
+.text-tab {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.58;
+}
+
+.titl-tab {
+  font-size: 30px;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 30px;
+  background: linear-gradient(90.13deg, #ffc660fc 0.84%, #ff6700 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.line-tab {
+  width: 8px;
+  height: 303px;
+  background: rgb(255, 255, 255);
+  margin-left: 60px;
+}
+
+.tab-content {
+  max-width: 860px;
+  margin-left: 60px;
+}
+.link_circle_tabs:hover circle.red,
+.link_circle_tabs:hover path.red {
+  stroke: #f0145a;
+}
+/*--------------------teamSlider--------------------------------------------------------------*/
+.team_img {
+  width: 400px;
+  max-height: 100%;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.team_one_foto {
+  background: url(../image/IMG_9637.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.team_two_foto {
+  background: url(../image/lang.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.team_three_foto {
+  background: url(../image/young.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title_team {
+  max-width: 1140px;
+  font-size: 35px;
+  line-height: 1.21;
+  color: var(--ten-color);
+  margin-bottom: 30px;
+}
+
+.name_team {
+  color: var(--fourth-color);
+}
+
+.job_title {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--fourth-color);
+}
+
+.text_team {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: var(--five-color);
+  border-radius: 0px 12px 12px 0px;
+}
+
+.card_team {
+  display: flex;
+}
+
+.slick-dots li button:before {
+  font-size: 16px;
+  opacity: 0.2;
+  color: var(--fourth-color);
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: var(--second-color);
+}
+/*---------------------------------------*/
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--five-color);
+}
+
+.circle-footer {
+  background: var(--fourth-color);
+}
+
+.gen-footer {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  margin-bottom: 23.5px;
+}
+
+.adress-footer {
+  font-weight: 400;
+  color: var(--fourth-color);
+}
+
+.geolocation {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--fourth-color);
+}
+
+.contakt-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-footer {
+  color: var(--fourth-color);
+}
+
+.llc {
+  font-weight: 400;
+  color: var(--grey-color);
+}
+
+.tel-footer {
+  color: var(--fourth-color);
+}
+
+.logos-link2:hover svg path {
+  fill: var(--third-color);
+}
+
+.wrap-footer {
+  display: grid;
+  grid-template-areas:
+    "gen-footer right-footer"
+    "contakt-footer contakt-footer";
+  justify-content: space-between;
+}
+
+.gen-footer {
+  grid-area: gen-footer;
+}
+.right-footer {
+  grid-area: right-footer;
+}
+
+.contakt-footer {
+  grid-area: contakt-footer;
+}

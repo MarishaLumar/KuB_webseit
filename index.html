@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuB</title>
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script>
+        function scrollToElem(elem) {
+            event.preventDefault()
+            const target = document.querySelector(elem.hash)
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: "smooth"
+            })
+        }
+    </script>
+</head>
+
+<body class="body dark">
+    <div class="gradient-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="wrap-header">
+                    <div class="logo-header">
+                        <img class="logo" src="./image/logo_KUB_kant.png" alt="KUB">
+                    </div>
+                    <div class="first-menu">
+                        <nav class="nav-menu1">
+                            <a href="#">УК</a>
+                            <a class="activ-len" href="#">РУ</a>
+                            <a href="#">DE</a>
+                        </nav>
+                        <div class="circle"></div>
+                        <a class="adress-header" href="#">04315 Leipzig, Eisenbahnstr.99</a>
+                        <div class="circle"></div>
+                        <a href="tel:+4915224497857  " class="phone">+49 152 244 978 57 </a>
+                        <div class="circle"></div>
+                        <a class="logos-link" href="https://www.instagram.com/kultur_und_bildungsverein/" target="_blank" rel="noopener noreffe">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.66721 12C8.66721 10.1591 10.1591 8.6664 12 8.6664C13.8409 8.6664 15.3336 10.1591 15.3336 12C15.3336 13.8409 13.8409 15.3336 12 15.3336C10.1591 15.3336 8.66721 13.8409 8.66721 12ZM6.86511 12C6.86511 14.836 9.16398 17.1349 12 17.1349C14.836 17.1349 17.1349 14.836 17.1349 12C17.1349 9.16397 14.836 6.8651 12 6.8651C9.16398 6.8651 6.86511 9.16397 6.86511 12ZM16.1381 6.66155C16.1381 7.32391 16.6753 7.86187 17.3385 7.86187C18.0008 7.86187 18.5388 7.32391 18.5388 6.66155C18.5388 5.99919 18.0016 5.46204 17.3385 5.46204C16.6753 5.46204 16.1381 5.99919 16.1381 6.66155ZM7.95961 20.1397C6.98465 20.0953 6.45477 19.933 6.10259 19.7956C5.6357 19.6139 5.30291 19.3974 4.95234 19.0477C4.60259 18.6979 4.3853 18.3651 4.20436 17.8982C4.06704 17.546 3.90469 17.0162 3.86026 16.0412C3.81179 14.9871 3.8021 14.6704 3.8021 12C3.8021 9.32956 3.8126 9.01373 3.86026 7.9588C3.90469 6.98384 4.06785 6.45477 4.20436 6.10178C4.38611 5.63489 4.60259 5.3021 4.95234 4.95153C5.3021 4.60178 5.6349 4.38449 6.10259 4.20355C6.45477 4.06624 6.98465 3.90388 7.95961 3.85945C9.01373 3.81099 9.33037 3.80129 12 3.80129C14.6704 3.80129 14.9863 3.81179 16.0412 3.85945C17.0162 3.90388 17.5452 4.06704 17.8982 4.20355C18.3651 4.38449 18.6979 4.60178 19.0485 4.95153C19.3982 5.30129 19.6147 5.63489 19.7964 6.10178C19.9338 6.45396 20.0961 6.98384 20.1406 7.9588C20.189 9.01373 20.1987 9.32956 20.1987 12C20.1987 14.6696 20.189 14.9863 20.1406 16.0412C20.0961 17.0162 19.933 17.546 19.7964 17.8982C19.6147 18.3651 19.3982 18.6979 19.0485 19.0477C18.6987 19.3974 18.3651 19.6139 17.8982 19.7956C17.546 19.933 17.0162 20.0953 16.0412 20.1397C14.9871 20.1882 14.6704 20.1979 12 20.1979C9.33037 20.1979 9.01373 20.1882 7.95961 20.1397ZM7.87722 2.06058C6.8126 2.10905 6.08562 2.27787 5.44992 2.52504C4.79241 2.78029 4.23506 3.12278 3.67851 3.67851C3.12278 4.23425 2.78029 4.7916 2.52504 5.44992C2.27787 6.08562 2.10905 6.8126 2.06058 7.87722C2.01131 8.94346 2 9.28433 2 12C2 14.7157 2.01131 15.0565 2.06058 16.1228C2.10905 17.1874 2.27787 17.9144 2.52504 18.5501C2.78029 19.2076 3.12197 19.7658 3.67851 20.3215C4.23425 20.8772 4.7916 21.2189 5.44992 21.475C6.08643 21.7221 6.8126 21.891 7.87722 21.9394C8.94427 21.9879 9.28433 22 12 22C14.7165 22 15.0565 21.9887 16.1228 21.9394C17.1874 21.891 17.9144 21.7221 18.5501 21.475C19.2076 21.2189 19.7649 20.8772 20.3215 20.3215C20.8772 19.7658 21.2189 19.2076 21.475 18.5501C21.7221 17.9144 21.8918 17.1874 21.9394 16.1228C21.9879 15.0557 21.9992 14.7157 21.9992 12C21.9992 9.28433 21.9879 8.94346 21.9394 7.87722C21.891 6.8126 21.7221 6.08562 21.475 5.44992C21.2189 4.79241 20.8772 4.23506 20.3215 3.67851C19.7658 3.12278 19.2076 2.78029 18.5509 2.52504C17.9144 2.27787 17.1874 2.10824 16.1236 2.06058C15.0574 2.01212 14.7165 2 12.0008 2C9.28433 2 8.94427 2.01131 7.87722 2.06058Z" fill="#ffffff"/>
+                                </svg>
+                        </a>
+                    </div>
+                    <div class="burger-block">
+                        <input class="check" type="checkbox">
+                        <p class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </p>
+                        <nav class="second-menu">
+                            <ul>
+                                <li><a class="active-link" href="./index.html">Главная</a></li>
+                                <li><a href="./pages/services_page.html"> Расписание занятий</a></li>
+                                <li><a href="./pages/team.html">Уроки и Кружки</a></li>
+                                <li><a href="./pages/publications.html">Новости</a></li>
+                                <li> <a href="./pages/contact.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="first-screen">
+            <span></span>
+            <h1 class="title-center">Детский учебный центр</h1>
+            <div class="tabs-link">
+                <a href="#tabs" class="link_circle_tabs" onclick="scrollToElem(this)">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_22733_3960)">
+                            <circle class="red" opacity="0.5" cx="21" cy="21" r="20" stroke=" #b3b3ba"
+                                stroke-width="2" />
+                            <path class="red" d="M12 18L21 27L30 18" stroke="#ffffff" stroke-width="2" />
+                        </g>
+                        <defs>
+                            <clippath id="clip0_22733_3960">
+                                <rect width="42" height="42" fill="white" />
+                            </clippath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <section id="tabs" class="section-tabs">
+            <div class="container ">
+                <div class="flex align-items-start">
+                    <div class="wrap-tabs">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">Добро пожаловать</button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">О нас</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">Процесс обучения</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">Мы предлагаем</button>
+                        </div>
+                    </div>
+                    <div class="line-tab"></div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <h2 class="titl-tab">
+                                Дети — наш самый ценный ресурс
+                            </h2>
+                            <p class="text-tab">
+                                KuB- это культурно-образовательный  детский центр развития детей в Лейпциге. 
+                                К нам с удовольствием приходят малыши и взрослые, чтобы общаться друг с другом,
+                                вместе постигать новое, созидать, отдыхать и веселиться.
+                                Мы предлагает родителям широкий спектр возможностей для развития и обучения их детей.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <h2 class="titl-tab">
+                                Отдаём своё сердце детям
+                            </h2>
+                            <p class="text-tab">
+                                "Kultur- Und Bildungsverein"- 
+                                создан педагогами единомышленниками, которые смотрят на воспитание и развитие детей
+                                с точки зрения того, что каждый ребенок талантлив. И наша задача найти и развить
+                                способности ребенка с самого раннего детства. Ведь именно в дошкольном возрасте
+                                формируются все познавательные процессы, базовые качества человека, вера в себя.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <h2 class="titl-tab">
+                                Учеба — это просто!
+                            </h2>
+                            <p class="text-tab">
+                                Организован с учетом возрастных особенностей развития,
+                                 способностей, потребностей и интересов детей. 
+                                 Для самых маленьких наших воспитанников есть группа раннего развития.
+                                 В нашем центре проводятся групповые и индивидуальные занятия.
+                                 Математика и логика. Художественная студия.
+                                Творческая мастерская. Изучение иностранных языков. И многое другое.
+                                 
+                                 
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
+                            <h2 class="titl-tab">
+                                Учись и играй!
+                            </h2>
+                            <p class="text-tab">
+                                Прекрасную альтернативу и дополнение к детсадовскому
+                                и домашнему воспитанию. Здесь вы сможете получить
+                                комплексный подход к воспитанию и развитию ребенка.
+                                Современные методики, которые не нарушают процесс развития малыша.
+                                Освободим от изнурительных домашних занятий. Поможем адаптироваться
+                                вашему ребёнку в новой среде.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-cards">
+            <div class="container">
+                 <h2 class="title-cards">Почему стоит выбрать "Kultur- Und Bildungsverein"</h2>
+                <div class="wrapper-cards">
+                    <div class="card">
+                        <div class="icon-card">
+                            <img class="pic" src="./image/matemat.png" alt="matemat">
+                        </div>
+                        <div class="blok-card">
+                            <h3 class="subtitle-card">Математика легко </h3>
+                            <p class="text-card">
+                                Превращаем учебный процесс в увлекательные занятие.
+                                Для развития математического мышления особо важны регулярные 
+                                интеллектуальные занятия, разнообразие в сочетании
+                                с нестандартным подходом. Именно регулярные тренировки
+                                помогут добиться желаемого результата.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon-card">
+                            <img class="pic" src="./image/ranneerazvitie.png" alt="ranneerazvitie">
+                        </div>
+                        <div class="blok-card">
+                            <h3 class="subtitle-card headline">
+                                Комплексные занятия</h3>
+                            <p class="text-card">
+                                Наши развивающие занятия  для детей - это комплекс
+                                разнообразных уникальных игровых упражнений, направленных на
+                                знакомство с окружающим миром,
+                                развитие речи и социального общения, умение уверенно чувствовать себя
+                                 среди сверстников, а также контролировать свое поведение.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="icon-card">
+                            <img class="pic" src="./image/risovanie.png" alt="risovanie">
+                        </div>
+                        <div class="blok-card">
+                            <h3 class="subtitle-card"> Развиваем творчество</h3>
+                            <p class="text-card">
+                                Стимулируем ребенка к экспериментированию. Обеспечим малышу доступ
+                                к материалам для творческих экспериментов, таких как краски,
+                                фломастеры, бумага, глина и т.д Развиваем воображение ребенка. 
+                                Создаём благоприятную среду для творчества.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="icon-card">
+                            <img class="pic" src="./image/musik.png" alt="musik">
+                        </div>
+                        <div class="blok-card">
+                            <h3 class="subtitle-card">Музыкальное развитие</h3>
+                            <p class="text-card">
+                                Музыкальные уроки в нашем центре будут не только полезными, 
+                                но и интересными. Наши учителя используют современные методики
+                                преподавания, чтобы привить Вашему ребенку любовь к музыке.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="icon-card">
+                            <img class="pic" src="./image/vrema.png" alt="vrema">
+                        </div>
+                        <div class="blok-card">
+                            <h3 class="subtitle-card headline">Подготовка к школе</h3>
+                            <p class="text-card">
+                                Наши занятия по подготовке к школе особенные. 
+                                Уроки проходят на основе интерактивных
+                                упражнений и веселых командных игр. 
+                                Дошкольники узнают новую информацию в интересующем их формате, 
+                                улучшая свои знания.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="icon-card">
+                            <img class="pic" src="./image/language.png" alt="language">
+                        </div>
+                        <div class="blok-card">
+                            <h3 class="subtitle-card">Иностранные языки</h3>
+                            <p class="text-card">
+                                Уроки построены так, что максимум времени уделяется практике,
+                                интерактивным упражнениям и игровым активностям с использованием языка.
+                                Маленькие студенты общаются, поют, готовят интересные командные проекты,
+                                
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    <main>
+        <div class="jq">
+            <div class="container">
+                <div id="teamSlider" class="your-class">
+                    <div class="wrap_team">
+                        <div class="card_team">
+                            <div class="team_img team_one_foto"></div>
+                            <div class="text_team">
+                                <div class="link-cards">
+                                    
+                                </div>
+                                <h2 class="title_team">
+                                    Приглашаем вас и ваших деток в школу раннего интеллектуального 
+                                    развития ребёнка, в которой малыши, благодаря 
+                                    занятиям познают мир вокруг нас.
+                                </h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap_team">
+                        <div class="card_team">
+                            <div class="team_img team_three_foto"></div>
+                            <div class="text_team">
+                                <div class="link-cards">
+                                   
+                                </div>
+                                <h2 class="title_team">
+                                    В нашем центре есть много уроков для школьников. Наши учителя помогут вашему 
+                                    ребенку со школьной программой, освободят вас от домашних занятиях. 
+                                     
+                                </h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap_team">
+                        <div class="card_team">
+                            <div class="team_img team_two_foto"></div>
+                            <div class="text_team">
+                                <div class="link-cards">
+                                    
+                                </div>
+                                <h2 class="title_team">
+                                    Учащиеся в увлекательной форме изучают основы иностранных языков, 
+                                    грамматические правила и конструкции, учатся читать и писать, 
+                                    составляют диалоги..
+                                </h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo-partners">
+            <div class="container-big">
+                <div class="titie-partners">
+                    <h4>КРУЖКИ И УРОКИ</h4>
+                </div>
+                <div class="wrap-logo">
+                    <div class="logo-img hillel">
+                        <img src="./image/russ.urok.png" alt="russ">
+                    </div>
+                    <div class="logo-img wannabiz">
+                        <img src="./image/vokal.png" alt="vokal">
+                    </div>
+                    <div class="logo-img tapgerine">
+                        <img src="./image/german.png" alt="tapgerine">
+                    </div>
+                    <div class="logo-img dlook">
+                        <img src="./image/english.png" alt="3Dlook">
+                    </div>
+                    <div class="logo-img orangear">
+                        <img src="./image/matematika.png" alt="orangear">
+                    </div>
+                    <div class="logo-img adtelligent">
+                        <img src="./image/ukr.urok.png" alt="adtelligent">
+                    </div>
+                    <div class="logo-img clickky">
+                        <img src="./image/podgotovka.png" alt="Clickky">
+                    </div>
+                    <div class="logo-img ecoleasing">
+                        <img src="./image/teatr.png" alt="ecoleasing">
+                    </div>
+                    <div class="logo-img infatek">
+                        <img src="./image/izo.png" alt="infraTek">
+                    </div>
+                    <div class="logo-img citipark">
+                        <img src="./image/shahmatu.png" alt="citi-park">
+                    </div>
+                    <div class="logo-img artprint">
+                        <img src="./image/masterskaj.png" alt="citi-park">
+                    </div>
+                    <div class="logo-img ultimate">
+                        <img src="./image/tanci.png" alt="ultimate_card.">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="publication_block">
+            <div class="container">
+               
+                <h2 class="title_publication">Советы для родителей</h2>
+                <div class="wrap-publication">
+                    <div class="publication_card card_one">
+                        <img class="publication_img" src="./image/femeli_publikacii.jpg" alt="Publication-1">
+                        <div class="publication_block_text">
+                            <h4 class="publication_subject">Родители - лучшие друзья!</h4>
+                            <div class="line_small"></div>
+                            <p class="publication_text">
+                                Дайте ребёнку быть самим собой.
+                                Не подталкивайте его все время.
+                                Не учите его, не читайте ему нотации.
+                                Будьте для него другом. Не заставляйте его делать, 
+                                что-то против его воли! Ищите компромисы и 
+                                будьте дипломатами.  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="publication_card card_two">
+                        <img class="publication_img" src="./image/uchoba_publikacia.jpg" alt="Publication-2">
+                        <div class="publication_block_text">
+                            <h4 class="publication_subject">Каждый ребенок гений!</h4>
+                            <div class="line_small"></div>
+                            <p class="publication_text">
+                                Если ребёнку трудно и он готов принять
+                                вашу помощь, обязательно помогите ему.
+                                При этом возьмите на себя только то, что он
+                                не может выполнить сам, остальное предоставьте
+                                делать ребенку самому.
+                                По мере освоение ребёнком новых действий,
+                                постепенно передавайте инициативу ему. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="publication_card card_three ">
+                        <img class="publication_img" src="./image/tvorchestvo_publikacia.jpg" alt="Publication-3">
+                        <div class="publication_block_text">
+                            <h4 class="publication_subject">Талантливые дети!</h4>
+                            <div class="line_small"></div>
+                            <p class="publication_text">
+                                Дети – невероятно творческий народ. 
+                                Кому-то нравится рисовать и мастерить, кому-то – музицировать,
+                                а кто-то – прирожденный изобретатель, обожает играть с конструктором
+                                или разбирать технические игрушки. есть малыши, которые любят наряжаться
+                                и ставят спектакли. А кто-то с увлечением копается в земле и строит
+                                из прутиков и глины. Дети бесконечно пробуют и узнают,
+                                что им интересно и к чему лежит душа.
+                                Не думайте, что ваш ребенок не способен к творчеству.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="line_big"></div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrap-footer">
+
+                <div class="gen-footer">
+                    <a class="adress-footer" href="#">04315 Leipzig, Eisenbahnstr.99</a>
+                    <div class="circle circle-footer"></div>
+                    <a class="geolocation" href="https://maps.app.goo.gl/vgKx7egC4R2ybx1HA?g_st=ic">On map</a>
+                </div>
+                <div class="contakt-footer">
+                    <div class="logo-footer">
+                        <a class="logos-link2" href="https://www.facebook.com/groups/1413857089151431/">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                    fill="#24A3FF" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="circle circle-footer"></div>
+                    <a class="tel-footer" href="+4915224497857">+49 152 244 978 57</a>
+                    <div class="circle circle-footer"></div>
+                    <a class="email-footer" href="mailto:drkubleipzig@googlemail.com">drkubleipzig@googlemail.com</a>
+                </div>
+
+                <div class="right-footer">
+                    <p class="llc">© 2024 Kultur- Und Bildungsverein</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/script-slider.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

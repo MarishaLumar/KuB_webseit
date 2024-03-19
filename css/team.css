@@ -1,0 +1,163 @@
+@import url(../template/header.css);
+@import url(../template/footer.css);
+@import url(../component/color.css);
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/*--------------MAIN---------------------------------------------*/
+
+/*--------------MAIN---------------------------------------------*/
+
+.main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title {
+  max-width: 1360px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.text-title {
+  font-size: 38px;
+  line-height: 1.21;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.name-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.foto {
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  padding: 10px;
+  border-radius: 12px;
+ 
+}
+
+.team-1 {
+  background: url(../image/english_post_children.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+.team-2 {
+  background: url(../image/de_post.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+.team-3 {
+  background: url(../image/ukr_post.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+
+.team-4 {
+  background: url(../image/mussik_publikacij.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+
+.team-5 {
+  background: url(../image/russ_post.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+
+.team-6 {
+  background: url(../image/matematika_post.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.team-7 {
+  background: url(../image/tvorchestvo_post.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.team-8 {
+  background: url(../image/teatr_post.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.team-9 {
+  background: url(../image/dochkolniki_post.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.team-10 {
+  background: url(../image/shaxmatu_post.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.team-11 {
+  background: url(../image/izo_post.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.team-12 {
+  background: url(../image/tanzi_post.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+a:hover {
+  color: var(--third-color);
+}
+
+.desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--fourth-color);
+}
+
+.name-card:hover .range svg path {
+  stroke: var(--third-color);
+}
+
+.name-card:hover .range svg circle {
+  fill: var(--seventh-color);
+}
+
+.name-card:hover .link-neme {
+  color: var(--third-color);
+}
+
+.wrap-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 60px;
+}

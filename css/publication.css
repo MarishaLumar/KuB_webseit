@@ -1,0 +1,113 @@
+@import url(../template/header.css);
+@import url(../template/footer.css);
+@import url(../component/color.css);
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+
+a:hover {
+  color: var(--third-color);
+}
+
+.wrap-publication {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.publication_block {
+  /* background-color: var(--five-color); */
+  padding-top: 30px;
+}
+.title_publication {
+  font-size: 38px;
+  line-height: 1.21;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+  margin-top: 14px;
+}
+.publication_card {
+  background-color: var(--white-color);
+  border-radius: 8px 8px 0px 0px;
+  
+}
+
+.publication_block_text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+}
+.publication_img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.publication_subject {
+  color: var(--fourth-color);
+}
+.publication_subject:hover {
+  color: var(--third-color);
+}
+.publication_data {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+}
+.line_small {
+  height: 4px;
+  width: 100%;
+  background-color: var(--sixth-color);
+}
+
+.publication_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--black-color);
+}
+
+.btn_public {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  min-width: 211px;
+  padding: 18px 30px;
+  background: var(--second-color);
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  color: var(--white-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_public_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.line_big {
+  height: 2px;
+  width: 100%;
+  background-color: var(--sixth-color);
+  margin-top: 30px;
+}
