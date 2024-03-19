@@ -49,3 +49,9 @@
       height: 400px;
     }
   }
+
+  @media (max-width: 500px){
+    .foto.foto.team-11 img {
+      height: 290px;
+    }
+  }
