@@ -1,4 +1,4 @@
-@import url(../template/header.css);
+@import url(../template/gradient_header.css);
 @import url(../template/footer.css);
 @import url(../component/color.css);
 html {
@@ -27,7 +27,7 @@ html {
 .text-title {
   font-size: 38px;
   line-height: 1.21;
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  background: linear-gradient(90.13deg, #ffc660fc 0.84%, #ff6700 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -137,10 +137,13 @@ a:hover {
   color: var(--third-color);
 }
 
+.link-neme {
+  color: var(--second-color);
+}
 .desc {
   font-size: 14px;
   font-weight: 400;
-  color: var(--fourth-color);
+  color: var(--white-color);
 }
 
 .name-card:hover .range svg path {

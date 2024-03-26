@@ -64,6 +64,7 @@ img.logo {
   justify-content: flex-end;
   gap: 6px;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .second-menu ul {

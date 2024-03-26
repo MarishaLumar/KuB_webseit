@@ -76,7 +76,6 @@
   .first-menu {
     justify-content: space-between;
     padding: 12px 30px;
-    background-color: var(--five-color);
     margin: 0 -30px 15px;
   }
 
@@ -106,7 +105,6 @@
     display: inline-block;
     width: 18px;
     height: 2px;
-    background-color: var(--primary-color);
     position: absolute;
     transition: all 0.3s linear;
     opacity: 1;

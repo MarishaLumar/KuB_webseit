@@ -1,4 +1,4 @@
-@import url(../template/header.css);
+@import url(../template/gradient_header.css);
 @import url(../template/footer.css);
 @import url(../component/color.css);
 html {
@@ -19,9 +19,10 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 .publication_block {
-  /* background-color: var(--five-color); */
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .title_publication {
   font-size: 38px;
@@ -34,7 +35,6 @@ a:hover {
   margin-top: 14px;
 }
 .publication_card {
-  background-color: var(--white-color);
   border-radius: 8px 8px 0px 0px;
   
 }
@@ -53,7 +53,8 @@ a:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .publication_subject {
-  color: var(--fourth-color);
+  color: var(--second-color);
+  text-align: center;
 }
 .publication_subject:hover {
   color: var(--third-color);
@@ -76,10 +77,11 @@ a:hover {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.57;
-  color: var(--black-color);
+  color: var(--white-color);
+  text-align: center;
 }
 
-.btn_public {
+/* .btn_public {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -96,7 +98,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .btn_public_block {
   display: flex;
@@ -105,9 +107,4 @@ a:hover {
   margin-top: 30px;
 }
 
-.line_big {
-  height: 2px;
-  width: 100%;
-  background-color: var(--sixth-color);
-  margin-top: 30px;
-}
+
