@@ -223,7 +223,15 @@
 @media (max-width:515px){
   .first-screen {
     min-height: fit-content;
-    aspect-ratio: 285/400;
+    aspect-ratio: 255/400;
     margin-top: 150px;
+  }
+}
+
+@media (max-width:405px){
+  .first-screen {
+    min-height: fit-content;
+    aspect-ratio: 235/350;
+   
   }
 }
