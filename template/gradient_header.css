@@ -201,6 +201,10 @@ a:hover {
       "logo-header burger-block";
   }
 
+  .second-menu a {
+    position: relative;
+    color: var(--fourth-color);
+  }
   .gradient-wrapper .header {
     padding-top: 0;
     min-width: 100%;
@@ -369,12 +373,7 @@ a:hover {
     margin-bottom: 0;
   }
 
-  /* .logo {
-    max-width: 69px;
-  } */
-  .slash {
-    max-width: 11.6px;
-  }
+ 
 
   .text-header {
     font-size: 20px;
