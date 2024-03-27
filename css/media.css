@@ -216,7 +216,7 @@
   .first-screen {
     min-height: fit-content;
     aspect-ratio: 315/450;
-    margin-top: 150px;
+    margin-top: 80px;
   }
 }
 
@@ -224,14 +224,14 @@
   .first-screen {
     min-height: fit-content;
     aspect-ratio: 255/400;
-    margin-top: 150px;
+    margin-top: 75px;
   }
 }
 
-@media (max-width:405px){
+@media (max-width:445px){
   .first-screen {
     min-height: fit-content;
-    aspect-ratio: 235/350;
+    aspect-ratio: 235/450;
    
   }
 }
