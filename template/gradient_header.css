@@ -77,13 +77,14 @@ img.logo {
 
 .second-menu a {
   position: relative;
+  color: var(--white-color);
 }
 
-/* a.active-link {
+a.active-link {
     color: var(--third-color);
-  } */
+  }
 
-/* .second-menu a.active-link::before {
+.second-menu a.active-link::before {
     content: "";
     bottom: -2px;
     left: 0;
@@ -91,7 +92,7 @@ img.logo {
     width: 100%;
     height: 3px;
     background-color: var(--third-color);
-  } */
+  }
 
 .second-menu a::before {
   content: "";
@@ -105,11 +106,11 @@ img.logo {
 
 .second-menu a:hover::before {
   width: 100%;
-  background-color: var(--white-color);
+  background-color: var(--third-color);
 }
 
 .second-menu a:hover {
-  color: var(--white-color);
+  color: var(--third-color);
 }
 
 .text-header {
@@ -316,6 +317,7 @@ a:hover {
     color: var(--second-color);
   }
 
+  
   .wrap-header {
     position: relative;
   }

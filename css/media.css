@@ -1,8 +1,10 @@
 @media (max-width: 1266px) {
   /*---------------------FIRST-SCREEN-----------------------------------------------------------*/
   .first-screen {
-    background-size: cover;
-  }
+    background-size: 130vh;
+    margin-top: 150px;
+}
+
   img.logo {
     max-width: 75%;
   }
@@ -10,12 +12,23 @@
 
 @media (max-width: 960px) {
   /*---------------------SECTION-TABS-----------------------------------------------------------*/
-  .wrap-footer {
+  /* .wrap-footer {
     display: grid;
     grid-template-areas:
       "gen-footer right-footer"
       "contakt-footer contakt-footer";
-  }
+  } */
+
+  .wrap-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-screen {
+  background-size: 150vh;
+  margin-top: 280px;
+}
  
     img.logo {
       max-width: 95%;
@@ -69,11 +82,11 @@
 
   .wrap-tabs {
     overflow-x: auto;
-    width: calc(100% + 120px);
-    margin-left: -60px;
-    margin-right: -60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    width: calc(100%);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .wrap-tabs {
@@ -100,16 +113,34 @@
   }
 }
 
+@media (max-width: 740px){
+  .first-screen {
+    background-size: 130vh;
+    margin-top: 120px;
+}
+
+.title-center {
+  margin-top:0px;
+  font-size: 38px;
+  max-width: 450px;
+  text-align: center;
+  line-height: 1.21;
+}
+
+}
+
 @media (max-width: 640px) {
   /*---------------------FIRST-SCREEN-----------------------------------------------------------*/
   .title-center {
-    max-width: 315px;
+    max-width: 355px;
     text-align: center;
+    margin-top: -75px;
   }
 
   .first-screen {
     min-height: fit-content;
-    aspect-ratio: 375/600;
+    aspect-ratio: 375/400;
+    margin-top: 150px;
   }
   /*---------------------SECTION-TABS-----------------------------------------------------------*/
   .wrap-tabs {
@@ -142,9 +173,10 @@
   }
 }
 
+
 @media (max-width: 640px) {
   /*----------------footer--------------------------------------------*/
-  .wrap-footer {
+  /* .wrap-footer {
     display: grid;
     grid-template-areas:
       "gen-footer "
@@ -152,7 +184,13 @@
       "right-footer";
     align-items: center;
     justify-content: center;
-  }
+  } */
+
+  .wrap-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
   .gen-footer {
     display: flex;
@@ -166,5 +204,21 @@
     flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width:615px){
+  .first-screen {
+    min-height: fit-content;
+    aspect-ratio: 315/450;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width:515px){
+  .first-screen {
+    min-height: fit-content;
+    aspect-ratio: 285/400;
+    margin-top: 150px;
   }
 }

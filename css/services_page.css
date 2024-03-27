@@ -38,7 +38,7 @@ a.active-link {
 
 .second-menu a:hover::before {
   width: 100%;
-  background-color: var(--white-color);
+  background-color: var(--third-color);
 }
 
 /*---------------section-cards--------------------------*/

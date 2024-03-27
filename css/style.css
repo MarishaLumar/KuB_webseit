@@ -7,12 +7,13 @@
 /*---------------------FIRST-SCREEN-----------------------------------------------------------*/
 
 .first-screen {
-  min-height: 150vh;
-  background: url(../image/fon2.png) no-repeat center/contain;
+  min-height: 110vh;
+  background: url(../image/new_header.png) no-repeat center/contain;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 130px;
 }
 
 img.logo {
@@ -24,10 +25,12 @@ img.logo {
 }
 
 .title-center {
-  margin-top: 60px;
+  margin-top: -60px;
   font-size: 38px;
   line-height: 1.21;
+  text-shadow: -3px -3px 0 hsl(232.86deg 20.59% 43.52%), -2px -3px 1px hsl(213.37deg 88.09% 28.55%);
 }
+
 /*---------------------SECTION-TABS-----------------------------------------------------------*/
 
 .nav-link.active {
@@ -229,6 +232,14 @@ img.logo {
 }
 
 .logos-link2:hover svg path {
+  fill: var(--third-color);
+}
+
+.logos-link3:hover svg path {
+  fill: var(--third-color);
+}
+
+.logos-link4:hover svg path {
   fill: var(--third-color);
 }
 
