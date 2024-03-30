@@ -1,0 +1,166 @@
+@import url(../template/gradient_header.css);
+@import url(../template/footer.css);
+@import url(../component/color.css);
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/*--------------MAIN---------------------------------------------*/
+
+/*--------------MAIN---------------------------------------------*/
+
+.main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title {
+  max-width: 1360px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.text-title {
+  font-size: 38px;
+  line-height: 1.21;
+  background: linear-gradient(90.13deg, #ffc660fc 0.84%, #ff6700 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.name-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.foto {
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  padding: 10px;
+  border-radius: 12px;
+ 
+}
+
+.gallery-1 {
+  background: url(../image/englisg_gallery.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+.gallery-2 {
+  background: url(../image/musik_gallery.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+.gallery-3 {
+  background: url(../image/tvorchestvo_gallery.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+
+.gallery-4 {
+  background: url(../image/izo_gallery.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+
+.gallery-5 {
+  background: url(../image/russ_gallery.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+
+.gallery-6 {
+  background: url(../image/tanci_gallery.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.gallery-7 {
+  background: url(../image/teatr_gallery.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.gallery-8 {
+  background: url(../image/ukr_gallery.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.gallery-9 {
+  background: url(../image/kub_gallery.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.gallery-10 {
+  background: url(../image/sport_gallery.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.gallery-11 {
+  background: url(../image/deti_gallery.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+.gallery-12 {
+  background: url(../image/de_gallery.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
+  background-size: cover;
+}
+
+a:hover {
+  color: var(--third-color);
+}
+
+.link-neme {
+  color: var(--second-color);
+}
+.desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.name-card:hover .range svg path {
+  stroke: var(--third-color);
+}
+
+.name-card:hover .range svg circle {
+  fill: var(--seventh-color);
+}
+
+.name-card:hover .link-neme {
+  color: var(--third-color);
+}
+
+.wrap-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 60px;
+}
