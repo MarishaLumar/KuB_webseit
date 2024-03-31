@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KuB/vocals</title>
     <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/english-gallery.css">
     <link rel="stylesheet" href="../css/english-gallery-media.css">
@@ -60,7 +61,45 @@
             </div>
         </header>
         <main>
-            <div class="container"></div>
+            <div class="container">
+                <section class="gallery">
+                    <h2 class="title gallery">Фотографии с урока английского языка</h2>
+                    <div class="gallery-list">
+                      <a href="../english_photo/english_foto_1.jpeg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="../english_photo/english_foto_1.jpeg" alt="alt">
+                      </a>
+                      <a href="../english_photo/english_foto_2.jpeg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="../english_photo/english_foto_2.jpeg" alt="alt">
+                      </a>
+                      <a href="../english_photo/english_foto_3.jpeg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="../english_photo/english_foto_3.jpeg" alt="alt">
+                      </a>
+                      <a href="../english_photo/english_foto_4.jpeg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="../english_photo/english_foto_4.jpeg" alt="alt">
+                      </a>
+                      <a href="../english_photo/english_foto_5.jpeg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="../english_photo/english_foto_5.jpeg" alt="alt">
+                      </a>
+                      <a href="../english_photo/english_foto_6.jpeg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="../english_photo/english_foto_6.jpeg" alt="alt">
+                      </a>
+                      <a href="../english_photo/english_foto_7.jpeg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="../english_photo/english_foto_7.jpeg" alt="alt">
+                      </a>
+                      <a href="../english_photo/english_foto_8.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="../english_photo/english_foto_8.jpg" alt="alt">
+                      </a>
+                    </div>
+                  </section>
+            </div>
         </main>
     </div>
     <footer class="footer">
@@ -110,6 +149,18 @@
 
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".gallery-list").magnificPopup({
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true
+      }
+    });
+  </script>
      <script src="../js/script.js"></script>
 
 </body>

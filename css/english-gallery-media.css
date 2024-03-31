@@ -1,12 +1,14 @@
-@media (max-width: 1160px) {
-    .container-small {
-      padding-left: 60px;
-      padding-right: 60px;
+
+
+  @media (max-width: 991px){
+    .gallery-item{
+      flex: 33.3%;
     }
   }
+ 
   @media (max-width: 770px){
-    .foto.team-4 img {
-      height: 500px;
+    .gallery-item{
+      flex: 50%;
     }
   }
   @media (max-width: 640px) {
@@ -45,12 +47,8 @@
   }
   
   @media (max-width: 600px){
-    .foto.team-4 img {
-      height: 400px;
+    .gallery-item{
+      flex: 100%;
     }
   }
-  @media (max-width: 500px){
-    .foto.team-4 img {
-      height: 290px;
-    }
-  }
+  
