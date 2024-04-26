@@ -29,6 +29,8 @@ img.logo {
   font-size: 38px;
   line-height: 1.21;
   text-shadow: -3px -3px 0 hsl(232.86deg 20.59% 43.52%), -2px -3px 1px hsl(213.37deg 88.09% 28.55%);
+  max-width: 355px;
+  text-align: center;
 }
 
 /*---------------------SECTION-TABS-----------------------------------------------------------*/
